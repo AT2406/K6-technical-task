@@ -29,11 +29,11 @@ export default function () {
     //second get request to updated url for randomID
     const detailGrab = http.get(url2);
 
+    // second status code check
     check(detailGrab, {
         'is status 200': (r) => r.status === 200});
         sleep(1);
 
+    // second response time check    
     console.log('Response time was ' + String(detailGrab.timings.duration) + ' ms');  
-
-    // console.log(url2);
     }
