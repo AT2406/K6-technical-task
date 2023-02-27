@@ -23,7 +23,7 @@ export default function () {
       sleep(1);
     
     // measure response time  
-    // console.log('Response time was ' + String(response.timings.duration) + ' ms');  
+    console.log('Response time was ' + String(response.timings.duration) + ' ms');  
     
     // filters through the json info in the response for values tied to ID and makes an array
     stringIDs = (response.json("#.id"))
@@ -43,5 +43,8 @@ export default function () {
         sleep(1);
 
     // second response time check    
-    // console.log('Response time was ' + String(detailGrab.timings.duration) + ' ms');  
+    console.log('Response time was ' + String(detailGrab.timings.duration) + ' ms');
+    
+    // test for   
+    console.log(detailGrab)
     }
